@@ -1,6 +1,6 @@
 # Stock Market Price Prediction with Sentiment Analysis
 
-This repository provides a framework for analyzing and predicting stock market prices by combining traditional historical price data with sentiment analysis from news and publication sources. It is designed for experimentation and research in the intersection of natural language processing (NLP) and quantitative financial analysis.
+This repository provides a framework for analysing and predicting stock market prices by combining traditional historical price data with sentiment analysis from news and publication sources. It is designed for experimentation and research in the intersection of natural language processing (NLP) and quantitative financial analysis.
 
 ---
 
@@ -13,10 +13,8 @@ This repository provides a framework for analyzing and predicting stock market p
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Requirements](#requirements)
-- [Results and Visualizations](#results-and-visualizations)
+- [Results and Visualisations](#results-and-visualisations)
 - [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -27,12 +25,12 @@ The goal of this project is to investigate whether sentiment data, extracted fro
 - Exploratory Data Analysis (EDA) on both price and textual sentiment data.
 - Data preprocessing and feature engineering.
 - Machine learning and deep learning modeling.
-- Evaluation and visualization of results.
+- Evaluation and visualisation of results.
 
 ## Features
 
 - **Exploratory Data Analysis (EDA):**
-  - Visualizations and statistical explorations of historical stock price trends.
+  - Visualisations and statistical explorations of historical stock price trends.
   - Outlier detection, volatility analysis, and correlation studies.
 - **Sentiment Analysis:**
   - Extraction and scoring of sentiment from financial news and social media.
@@ -40,7 +38,7 @@ The goal of this project is to investigate whether sentiment data, extracted fro
 - **Predictive Modeling:**
   - Baseline time-series forecasting (ARIMA, LSTM, etc.).
   - Hybrid models that include sentiment as an input.
-- **Visualization:**
+- **Visualisation:**
   - Interactive charts (matplotlib, seaborn, plotly) for both EDA and model results.
 
 ## Project Structure
@@ -51,7 +49,7 @@ notebooks/
     ├── news_eda.ipynb               # EDA on news/sentiment data
     ├── modeling.ipynb               # Predictive modeling notebooks
 plot images/
-    └── ...                         # Saved visualizations and plots
+    └── ...                         # Saved visualisations and plots
 script/
     └── ...                         # Python scripts for data processing or model training
 data/
@@ -70,7 +68,7 @@ README.md                           # Project documentation
    - News headlines/articles scraped or downloaded from financial news APIs.
 
 2. **Exploratory Data Analysis**  
-   - Statistical summary, correlation analysis, and visualization of stock prices.
+   - Statistical summary, correlation analysis, and visualisation of stock prices.
    - Distribution analysis of sentiment scores.
 
 3. **Sentiment Extraction**  
@@ -79,14 +77,14 @@ README.md                           # Project documentation
 
 4. **Feature Engineering**  
    - Merge of price features (returns, volatility, technical indicators) with sentiment features.
-   - Handling of missing values, normalization, and date alignment.
+   - Handling of missing values, normalisation, and date alignment.
 
 5. **Modeling and Prediction**  
    - Baseline models: ARIMA, linear regression, etc.
    - Deep learning: LSTM, GRU with and without sentiment inputs.
-   - Model evaluation: RMSE, MAE, directional accuracy, and visualization of predictions.
+   - Model evaluation: RMSE, MAE, directional accuracy, and visualisation of predictions.
 
-6. **Visualization and Interpretation**  
+6. **Visualisation and Interpretation**  
    - Graphs for feature relationships, model predictions, and error analysis.
 
 ## Getting Started
@@ -143,9 +141,9 @@ Install all dependencies using:
 pip install -r requirements.txt
 ```
 
-## Results and Visualizations
+## Results and Visualisations
 
-- Key findings, model results, and sample visualizations are saved in the `plot images/` directory.
+- Key findings, model results, and sample visualisations are saved in the `plot images/` directory.
 - For detailed results, refer to the output cells in each notebook.
 
 ## Contributing
