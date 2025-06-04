@@ -113,7 +113,6 @@ def save_plot(plot_folder, plot_name, plot_path):
 
     #display message and close plot
     print(f'\nPlot is saved to {relative_plot_path}.\n')
-    plt.close()
 
 def plot_sentiment_distribution(aligned_data, ticker,plot_folder):
     """
@@ -136,13 +135,18 @@ def plot_sentiment_distribution(aligned_data, ticker,plot_folder):
     plt.xlabel('Sentiment Category')
     plt.ylabel("Percentage of Publishers' Sentiment")
     plt.grid()
-    plt.show()
 
     plot_name = f'{ticker} - Distribution of Publisher Sentiment Categories.png'
     plot_path = os.path.join(plot_folder, plot_name)
 
     #save plot
     save_plot(plot_folder, plot_name, plot_path)
+
+    #show plot
+    plt.show()
+
+    #close plot to free up memory
+    plt.close()
 
 def plot_daily_return_and_sentiment(aligned_data, ticker,plot_folder):
     """
@@ -172,13 +176,18 @@ def plot_daily_return_and_sentiment(aligned_data, ticker,plot_folder):
 
     plt.title(f'{ticker} - Daily Stock Returns and Sentiment Over Time')
     fig.tight_layout()
-    plt.show()
 
     plot_name = f'{ticker} - Daily Stock Returns and Sentiment Over Time.png'
     plot_path = os.path.join(plot_folder, plot_name)
 
     #save plot
     save_plot(plot_folder, plot_name, plot_path)
+
+    #show plot
+    plt.show()
+
+    #close plot to free up memory
+    plt.close()
 
 def plot_sentiment_vs_daily_return(aligned_data, ticker,plot_folder):
     """
@@ -197,13 +206,18 @@ def plot_sentiment_vs_daily_return(aligned_data, ticker,plot_folder):
     plt.title(f'{ticker} - Scatter Plot of Sentiment vs. Daily Return')
     plt.xlabel('Sentiment Score')
     plt.ylabel('Daily Return')
-    plt.show()
-
+    
     plot_name = f'{ticker} - Scatter Plot of Sentiment vs. Daily Return.png'
     plot_path = os.path.join(plot_folder, plot_name)
 
     #save plot
     save_plot(plot_folder, plot_name, plot_path)
+
+    #show plot
+    plt.show()
+
+    #close plot to free up memory
+    plt.close()
     
 def plot_sentiment_vs_volatility(aligned_data, ticker,plot_folder):
     """
@@ -224,13 +238,18 @@ def plot_sentiment_vs_volatility(aligned_data, ticker,plot_folder):
     plt.title(f'{ticker} - Scatter Plot of Sentiment vs. Volatility (Rolling Std Dev)')
     plt.xlabel('Aggregated Sentiment Score')
     plt.ylabel('Volatility (Rolling Std Dev)')
-    plt.show()
 
     plot_name = f'{ticker} - Scatter Plot of Sentiment vs. Volatility (Rolling Std Dev).png'
     plot_path = os.path.join(plot_folder, plot_name)
 
     #save plot
     save_plot(plot_folder, plot_name, plot_path)
+
+    #show plot
+    plt.show()
+
+    #close plot to free up memory
+    plt.close()
 
 def analyse_and_plot(ticker, hist_data, senti_data, start_date=None, end_date=None, plot_folder=None):
     """
@@ -267,10 +286,15 @@ def analyse_and_plot(ticker, hist_data, senti_data, start_date=None, end_date=No
         plt.figure(figsize=(6, 4))
         sns.heatmap(correlation_matrix, annot=True, fmt=".2f")
         plt.title(f'{ticker} - Correlation Heatmap of Sentiment and Daily Return')
-        plt.show()
-
+        
         plot_name = f'{ticker} - Correlation Heatmap of Sentiment and Daily Return.png'
         plot_path = os.path.join(plot_folder, plot_name)
 
         #save plot
         save_plot(plot_folder, plot_name, plot_path)
+
+        #show plot
+        plt.show()
+
+        #close plot to free up memory
+        plt.close()
